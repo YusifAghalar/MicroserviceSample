@@ -4,12 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using ShoppingCard.API.Repository;
+using ShoppingCard.Domain.Repository;
+using System.Reflection;
 
 namespace ShoppingCard.API
 {
@@ -31,6 +29,9 @@ namespace ShoppingCard.API
                 opt.Configuration = Configuration.GetValue<string>("RedisSettings:ConnectionString");
             }
             );
+
+            services.AddScoped<IBasketRepository, BasketRepository>();
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

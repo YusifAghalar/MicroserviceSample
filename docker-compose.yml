@@ -7,13 +7,21 @@ services:
       context: .
       dockerfile: src/Services/Catalog/Catalog.API/Dockerfile
 
+  shoppingcarddb:
+    image: redis:alpine
+
   catalogdb:
     image: mongo
    
+  shoppingcard.api:
+    image: ${DOCKER_REGISTRY-}shoppingcardapi
+    build:
+      context: .
+      dockerfile: src/Services/ShopppingCard/ShoppingCard.API/Dockerfile
 
-
-
+  
 
 volumes:
   mongo_data:
+
 

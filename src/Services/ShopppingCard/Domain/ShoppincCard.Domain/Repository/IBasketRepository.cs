@@ -1,9 +1,10 @@
-﻿using ShoppingCard.API.Entities;
+﻿using ShoppincCard.Domain.Entities;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ShoppingCard.API.Repository
+namespace ShoppingCard.Domain.Repository
 {
     public interface IBasketRepository
     {

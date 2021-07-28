@@ -13,7 +13,9 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ShopppingCard", "ShopppingCard", "{EA7BBAC9-81D1-4436-AAAC-C8D9146D51EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCard.API", "src\Services\ShopppingCard\ShoppingCard.API\ShoppingCard.API.csproj", "{8740257F-3234-4561-AAA8-4814A19CD27D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCard.API", "src\Services\ShopppingCard\ShoppingCard.API\ShoppingCard.API.csproj", "{8740257F-3234-4561-AAA8-4814A19CD27D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppincCard.Domain", "src\Services\ShopppingCard\Domain\ShoppincCard.Domain\ShoppincCard.Domain.csproj", "{0980FCAB-37A6-42C5-A734-7D10D63309C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8740257F-3234-4561-AAA8-4814A19CD27D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8740257F-3234-4561-AAA8-4814A19CD27D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8740257F-3234-4561-AAA8-4814A19CD27D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0980FCAB-37A6-42C5-A734-7D10D63309C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0980FCAB-37A6-42C5-A734-7D10D63309C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0980FCAB-37A6-42C5-A734-7D10D63309C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0980FCAB-37A6-42C5-A734-7D10D63309C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +48,7 @@ Global
 		{CDE0D911-1274-45CE-9D17-B3A68B66E37B} = {479058FD-46E8-4368-BEF2-552CF718015D}
 		{EA7BBAC9-81D1-4436-AAAC-C8D9146D51EA} = {600B7C22-7824-4506-9CC0-F19D11873436}
 		{8740257F-3234-4561-AAA8-4814A19CD27D} = {EA7BBAC9-81D1-4436-AAAC-C8D9146D51EA}
+		{0980FCAB-37A6-42C5-A734-7D10D63309C0} = {EA7BBAC9-81D1-4436-AAAC-C8D9146D51EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {25A34045-5B5B-40BD-9B1C-3C9092FCAFC6}

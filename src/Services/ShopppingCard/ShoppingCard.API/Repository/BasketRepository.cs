@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
-using ShoppingCard.API.Entities;
+using ShoppincCard.Domain.Entities;
+using ShoppingCard.Domain.Repository;
 using System;
 using System.Threading.Tasks;
 

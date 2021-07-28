@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ShoppingCard.API.Entities
+namespace ShoppincCard.Domain.Entities
 {
     public class Basket
     {
@@ -15,7 +15,7 @@ namespace ShoppingCard.API.Entities
         }
 
         public Basket(string userName)
-        { 
+        {
             UserName = userName;
         }
 

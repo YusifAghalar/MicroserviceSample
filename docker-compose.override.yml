@@ -18,3 +18,20 @@ services:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
+
+  shoppingcarddb:
+    container_name: shoppincarddb
+    restart: always
+    ports:
+      - "6379:6379"
+    
+
+  shoppingcard.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - RedisSettings__ConnectionString=shoppincarddb:6379
+    depends_on:
+      - shoppingcarddb
+    ports:
+      - "9001:80"
+
