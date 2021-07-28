@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Catalog.API.Repository
 {
-    public class ProductRepository
+    public class ProductRepository:IProductRepository
     {
         private readonly ICatalogContext _context;
 
